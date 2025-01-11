@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.15"
-  }
+  },
+  "scripts": {
+  "build": "tailwindcss build src/styles.css -o public/styles.css",
+  "start": "tailwindcss build src/styles.css -o public/styles.css --watch"
+}
+
 }
