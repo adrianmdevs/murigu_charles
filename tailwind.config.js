@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./src/**/*.{html,js}"
   ],
@@ -10,14 +11,16 @@ module.exports = {
       },
       colors:{
         primary : {
-          light: '674567'
+          light: '#7c3aed',
+          DEFAULT: '#6b21a8',
+          dark: '#581c87',
         },
         secondary :{
           light : '#345899',
           default : '#10b981',
-          dark : '#059699'
+          dark : '#059699',
         },
-        background : '#1e293b'
+        customGray : '#1e293b'
     },
     fontSize: {
       'main-Heading':['48px',{lineHeight: '56px'}],

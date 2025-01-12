@@ -6,10 +6,19 @@
     <link rel="stylesheet" href="/public/output.css">
     <title>Murigu Gitonga</title>
 </head>
-<body class="md:bg-slate-100">
-    <header class="py-4 bg-white border-b shadow-md shadow-blue-300">
+<body class="md:bg-slate-100 dark:bg-slate-900">
+    <header class="py-4 bg-white border-b shadow-md dark:bg-slate-700 shadow-blue-300">
         <div class="flex items-center justify-between lg:justify-evenly lg:container lg:mx-auto">
-            <img src="/assets/images/LogoChoice2.png" alt="" class="h-[20px] md:h-[50px]">
+            <img src="/assets/images/LogoChoice2.png" alt="" class="h-[20px] md:h-[50px] dark:bg-white p-1">
+            <div class="flex items-center">
+                <button id="theme-toggle" class="flex items-center px-4 py-2 rounded bg-inherit">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="hidden w-6 h-6 dark:inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1112.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="inline w-6 h-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2m-14 0H3m16.364-7.364l-1.414 1.414M5.05 18.364l-1.414-1.414M18.364 18.364l-1.414-1.414M5.05 5.05L3.636 6.464" />
+                    </svg>
+                </button>
             <!--Desktop-->
             <nav class="hidden md:block">
                 <span>Github</span>
@@ -36,15 +45,15 @@
                     <a href="#" class="px-10 py-2 bg-red-500 rounded-lg">Blog</a>
                 </div>
             </div>
-            <div class="flex items-center text-center bg-white md:hidden">
-                <p>Before the beginning was darkness, before the internet was darkness <br>
+            <div class="flex items-center text-center bg-white dark:bg-slate-500 md:hidden">
+                <p class="text-black dark:text-white">Before the beginning was darkness, before the internet was darkness <br>
                     before the beginning was darkness, void and vain emptiness of space <br>
                     before the beginning...
                 </p>
             </div>
             <!--About Myself-->
             <div class="hidden md:flex md:flex-col md:space-y-4">
-                <p class="text-3xl font-semibold">I am Murigu Gitonga, A Full-stack software Developer, <br> A millitary defence Expert and 
+                <p class="text-3xl font-semibold dark:text-slate-400">I am Murigu Gitonga, A Full-stack software Developer, <br> A millitary defence Expert and 
                     an Overall Engineer with as passion for greater things in Life
                 </p>
                 <div class="flex justify-end w-full">
@@ -61,24 +70,24 @@
             <!--Container for Each Stack-->
             <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md: lg:grid-cols-3">
                 <!--Front-End-->
-                <div class="flex flex-col pb-4 space-y-5 border-gray-400 rounded-md bg-slate-50">
+                <div class="flex flex-col pb-4 space-y-5 border-gray-400 dark:border-white rounded-md bg-slate-50 dark:bg-inherit dark:text-slate-50">
                     <span class="w-full text-center uppercase">Front-End Web Development</span>
                     <!--Languages Container-->
                     <div class="grid grid-cols-2 gap-6 p-3 md:gap-8">
                         <!--Language-->
-                        <div class="flex items-center justify-center py-2 bg-white rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center py-2 bg-white dark:bg-slate-800 rounded-lg shadow-lg">
                             <img src="/assets/icons/html-5-svgrepo-com.svg" class="w-10 h-10" alt="">
-                            <span class="font-medium">HTML 5</span>
+                            <span class="font-medium dark:text-gray-300">HTML 5</span>
                         </div>
-                        <div class="flex items-center justify-center py-2 bg-white rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center py-2 bg-white dark:bg-slate-800 rounded-lg shadow-lg">
                             <img src="/assets/icons/css-3-svgrepo-com.svg" class="w-10 h-10" alt="">
-                            <span class="font-medium">CSS 3</span>
+                            <span class="font-medium dark:text-gray-300">CSS 3</span>
                         </div>
-                        <div class="flex items-center justify-center py-2 bg-white border rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center py-2 bg-white dark:bg-slate-800 border dark:border-none rounded-lg shadow-lg">
                             <img src="/assets/icons/javascript-svgrepo-com.svg" class="w-10 h-10" alt="">
-                            <span class="font-medium">Javascript</span>
+                            <span class="font-medium dark:text-gray-300">Javascript</span>
                         </div>
-                        <div class="flex items-center justify-center py-2 bg-white border rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center py-2 bg-white border dark:bg-slate-800 dark:border-none rounded-lg shadow-lg">
                             <img src="/assets/icons/typescript-svgrepo-com.svg" class="w-10 h-10" alt="">
                             <span class="font-medium">Typescript</span>
                         </div>
@@ -86,25 +95,25 @@
                     <div class="w-4/5 border-b border-gray-400"></div>
                     <!--Frameworks-->
                     <div class="grid grid-cols-2 px-3 gap-x-4">
-                        <div class="flex items-center justify-center py-2 bg-white border border-gray-400 rounded-lg">
+                        <div class="flex items-center p-2 space-x-3 dark:bg-slate-800 dark:border-none bg-white border border-gray-400 rounded-lg">
                             <img src="/assets/icons/tailwindcss-icon.svg" class="w-10 h-10" alt="">
-                            <span class="font-medium">tailwindcss</span>
+                            <span class="font-medium dark:text-gray-300">tailwindcss</span>
                         </div>
-                        <div class="flex items-center justify-center py-2 bg-white border border-gray-400 rounded-lg">
+                        <div class="flex items-center p-2 space-x-3 bg-white border dark:border-none dark:bg-slate-800 border-gray-400 rounded-lg">
                             <img src="/assets/icons/vue-vuejs-javascript-js-framework.svg" class="w-10 h-10" alt="">
-                            <span class="font-medium">Vue Js</span>
+                            <span class="font-medium dark:text-gray-300">VueJs</span>
                         </div>
                     </div>
                 </div>
                 <!--Back-End-->
-                <div class="flex flex-col space-y-5 bg-white border rounded-sm">
-                    <span class="w-full text-center uppercase">Back-End Web Development</span>
+                <div class="flex flex-col space-y-5 bg-white dark:bg-inherit dark:border-gray-300 border rounded-sm">
+                    <span class="w-full text-center uppercase dark:text-white">Back-End Web Development</span>
                     <!--Languages Container-->
                     <div class="grid grid-cols-2 gap-4 md:gap-6">
                         <!--Language-->
-                        <div class="flex items-center justify-center py-2 space-x-2 bg-white border border-gray-400 rounded-md">
+                        <div class="flex items-center justify-center py-2 space-x-2 rounded-lg bg-white dark:bg-slate-800 border border-gray-400">
                             <img src="/assets/icons/php.svg" class="w-10 h-10" alt="">
-                            <span class="font-medium">PHP</span>
+                            <span class="font-medium dark:text-white">PHP</span>
                         </div>
                         <div class="flex items-center justify-center py-2 space-x-2 bg-white border border-gray-400 rounded-md">
                             <img src="/assets/icons/python.svg" class="w-10 h-10" alt="">
@@ -126,11 +135,11 @@
                 </div>
                 <!--Tools & Services-->
                 <div class="flex flex-col space-y-4">
-                    <span class="text-center uppercase">Tools & Services</span>
-                    <div class="flex flex-col space-y-6">
+                    <span class="text-center uppercase dark:text-white">Tools & Services</span>
+                    <div class="flex flex-col space-y-6 dark:text-gray-300">
                         <!--Version Control-->
                         <div class="flex flex-col space-y-3">
-                            <span class="text-center">Version Control</span>
+                            <span class="text-center">---Version Control---</span>
                             <div class="flex justify-between">
                                     <div class="flex items-center space-x-2">
                                         <img src="/assets/icons/git.svg" alt="" class="w-10 h-10">
@@ -181,7 +190,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <!--Millitary Defence-->
         <section class="mx-3 md:mx-0">
@@ -189,9 +197,9 @@
                 <div class="py-3 border-l-4 border-red-800 md:border-none ps-2 md:ps-0 md:text-2xl">Millitary Defense</div>
             </div>
             <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:place-items-center lg:container lg:mx-auto">
-                <div class="flex flex-col space-y-3">
+                <div class="flex flex-col space-y-3 dark:text-white">
                     <span class="text-xl font-semibold uppercase">Developing the next generation's defenses</span>
-                    <div class="grid text-lg font-normal text-slate-900">
+                    <div class="grid text-lg font-normal text-slate-900 dark:text-white">
                         <p>
                             I have been keen to study different millitary strategies and the evolving landscape
                         </p>
@@ -208,15 +216,15 @@
             </div>
         </section>
         <!--Testimonials-->
-        <section class="mx-3 bg-white md:mx-0">
+        <section class="mx-3 bg-white md:mx-0 dark:bg-inherit">
             <div class="flex justify-start w-full py-2 uppercase md:py-4 md:justify-center">
-                <div class="py-3 border-l-4 border-red-800 md:border-none ps-2 md:ps-0 md:text-2xl">Testimonials</div>
+                <div class="py-3 tracking-[10px] font-light border-l-4 border-red-800 md:border-none ps-2 md:ps-0 md:text-2xl dark:text-slate-200">Testimonials</div>
             </div>
             <div class="hidden md:block">
                 <span>What they had to say...</span>
             </div>
             <!--Actual Testimonial Container-->
-            <div class="grid grid-cols-1 gap-9 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-9 md:grid-cols-2 lg:grid-cols-3 dark:text-slate-200">
                 <!--testimonial-->
                 <div class="flex flex-col rounded-md">
                     <p>
@@ -264,7 +272,7 @@
         <!--Miscellaneous-->
         <section class="text-white bg-slate-800">
             <div class="flex justify-start w-full py-2 uppercase md:py-4 md:justify-center">
-                <div class="py-3 border-l-4 border-white md:border-none ps-2 md:ps-0 md:text-2xl">Miscellaneous</div>
+                <div class="py-3 tracking-[10px] font-light border-l-4 border-white md:border-none ps-2 md:ps-0 md:text-2xl">Miscellaneous</div>
             </div>
             <!--skillset: Other-->
             <div class="flex justify-evenly">
@@ -280,7 +288,7 @@
                 </div>
 
                 </div>
-                <div class="grid md:border md:border-white p-2.5 rounded-lg">
+                <div class="grid md:border-white p-2.5 rounded-lg">
                     <div class="flex flex-col space-y-2 divide-x">
                         <span class="text-xl">IT Support</span>
                         <ul class="ps-2.5 flex flex-col space-y-2.5">
@@ -298,7 +306,7 @@
     <Footer>
         <div class="flex flex-col">
             <div class="flex items-center justify-between py-2 border-b">
-                <span>Blog</span>
+                <span class="font-baloo">Blog</span>
                 <img src="/assets/icons/navigation-arrow-arrows-direction-right-icon.svg" alt="">
             </div>
             <div class="flex items-center justify-start mx-5 md:mx-0">
@@ -316,12 +324,13 @@
                         <span>LinkenIn</span>
                     </a>
                 </nav>
-                <img src="/assets/icons/user.png" alt="" class="w-12 h-12">
+                <img src="/assets/images/user.png" alt="" class="w-12 h-12">
             </div>
             <div class="flex justify-center py-3">
-                <p>Murigu Gitonga <span>2025</span>.All Rights Reserved</p>
+                <p class="text-secondary-light">Murigu Gitonga <span>2025</span>.All Rights Reserved</p>
             </div>
         </div>
     </Footer>
+    <script src="./script.js"></script>
 </body>
 </html>
