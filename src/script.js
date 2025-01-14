@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     const toggleButton = document.getElementById('theme-toggle');
     const rootDocument = document.documentElement;
 
-    const moonIcon = document.getElementById('moon-icon');
-    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('dark-mode');
+    const sunIcon = document.getElementById('light-mode');
 
     const savedTheme = localStorage.getItem('theme');
     if(savedTheme){
