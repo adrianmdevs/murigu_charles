@@ -1,6 +1,4 @@
-//Javascript for reactive Components
-
-//Code for toggling dark mode
+//logic for toggling theme modes
 document.addEventListener('DOMContentLoaded',()=>{
     const toggleButton = document.getElementById('theme-toggle');
     const rootDocument = document.documentElement;
@@ -35,3 +33,14 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     }
 });
+
+// logic for carousel slider
+
+// logic for development & marketing containers slider
+
+// logic for footer dynamic age display
+let currentYear = document.getElementById('current-year');
+let thisYear = new Date();
+const thisDate = thisYear.getFullYear();
+currentYear.innerHTML = thisDate;
+
