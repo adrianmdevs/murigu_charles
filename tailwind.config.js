@@ -20,7 +20,9 @@ module.exports = {
           default : '#10b981',
           dark : '#059699',
         },
-        customGray : '#1e293b'
+        customGray : '#1e293b',
+        customDark : '#433211',
+        customMain: '#fffff'
     },
     fontSize: {
       'main-Heading':['48px',{lineHeight: '56px'}],
