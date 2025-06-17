@@ -1,11 +1,13 @@
-//logic for toggling theme modes
+// Logic for toggling theme modes
 document.addEventListener('DOMContentLoaded',()=>{
     const toggleButton = document.getElementById('theme-toggle');
     const rootDocument = document.documentElement;
 
+    //Icons for dark & light modes respectively
     const moonIcon = document.getElementById('dark-mode');
     const sunIcon = document.getElementById('light-mode');
 
+    //Save Theme to localStorage and 'remember' on refresh or re-visits
     const savedTheme = localStorage.getItem('theme');
     if(savedTheme){
         rootDocument.classList.add(savedTheme);
@@ -22,7 +24,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         };
         updateIcons();
     });
-
+// Toggle icons on mode change
     function updateIcons() {
         if (rootDocument.classList.contains('dark')) {
             moonIcon.classList.remove('hidden');
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
 });
 
-// logic for carousel slider
+// Logic for carousel slider
 document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.getElementById("image-slider");
     const slides = carousel.querySelectorAll("[image-carousel-item] img");
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let autoSlide;
   
     // Function to update the active slide
-    const updateActiveSlide = (index) => {
+    const updateActiveSlide = index => {
       slides.forEach((slide, i) => {
         slide.classList.toggle("hidden", i !== index);
         slide.classList.toggle("block", i === index);
@@ -65,12 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Function to move to the previous slide
     const prevSlide = () => {
+      //Display previous slide
       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
       updateActiveSlide(currentIndex);
     };
   
     // Function to jump to a specific slide
-    const goToSlide = (index) => {
+    const goToSlide = index => {
       currentIndex = index;
       updateActiveSlide(currentIndex);
     };
@@ -106,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
-    // Pause auto-slide on hover and resume on mouse leave
+    // Pause auto-slide on hover and resume on mouseout
     carousel.addEventListener("mouseenter", stopAutoSlide);
     carousel.addEventListener("mouseleave", startAutoSlide);
   

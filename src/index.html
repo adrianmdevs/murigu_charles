@@ -6,46 +6,47 @@
     <link rel="stylesheet" href="/public/output.css">
     <title>Murigu Gitonga</title>
 </head>
-<body class="md:bg-white dark:bg-gray-900">
-    <header class="py-3 bg-white border-b shadow-sm dark:shadow-none dark:bg-inherit shadow-blue-300">
+<body class="">
+    <header class="py-3 border-b shadow-sm bg-green dark:bg-[#202122] dark:shadow-none shadow-blue-300">
         <div class="flex items-center justify-between lg:justify-between lg:container lg:mx-auto">
             <img src="/assets/images/LogoChoice2.png" alt="" class="h-[29px] md:h-[50px] dark:bg-white p-1">
-            <div class="flex items-center">
-                <button id="theme-toggle" class="flex items-center px-4 py-2 rounded bg-inherit">
-                    <svg id="dark-mode" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#ffffff">
-                        <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/>
-                    </svg>
-                    <svg id="light-mode" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#5f6368">
-                        <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/>
-                    </svg>
-                </button>
-            </div>
-            <!--Desktop-->
-            <nav class="hidden md:block">
-                <a href="#" class="flex items-center px-16 py-3.5 space-x-5 bg-green-900 rounded-lg dark:bg-inherit dark:border dark:focus:outline-2">
-                    <svg viewBox="0 0 496 512" fill="#fff" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg">
+            <div class="flex items-center space-x-3">
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="flex items-center px-4 py-2 rounded bg-inherit">
+                        <svg id="dark-mode" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#ffffff">
+                            <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/>
+                        </svg>
+                        <svg id="light-mode" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#5f6368">
+                            <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <!--Desktop-->
+                <nav class="hidden md:block">
+                    <a href="#" class="flex items-center px-16 py-3.5 space-x-5 bg-green-900 rounded-lg dark:bg-inherit dark:border dark:focus:outline-2">
+                        <svg viewBox="0 0 496 512" fill="#fff" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zm65.8-383.2c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zm-147.6 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>
+                        <span class="text-lg text-white">Github</span>
+                    </a>
+                </nav>
+                <!--Mobile-->
+                <nav class="block md:hidden">
+                    <svg viewBox="0 0 496 512" class="w-10 h-10 dark:hidden" fill="black" xmlns="http://www.w3.org/2000/svg">
                         <path d="m165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zm65.8-383.2c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zm-147.6 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                    </svg>
-                    <span class="text-lg text-white">Github</span>
-                </a>
-            </nav>
-            <!--Mobile-->
-            <nav class="block md:hidden">
-                <svg viewBox="0 0 496 512" class="w-10 h-10 dark:hidden" fill="black" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zm65.8-383.2c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zm-147.6 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                </svg>  
-                <svg viewBox="0 0 496 512" class="hidden w-10 h-10 dark:block" fill="#ffff" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zm65.8-383.2c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zm-147.6 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                </svg> 
-            </nav>
+                    </svg>  
+                    <svg viewBox="0 0 496 512" class="hidden w-10 h-10 dark:block" fill="#ffff" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zm65.8-383.2c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zm-147.6 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg> 
+                </nav>
+            </div>
         </div>
     </header>
-    <main class="grid min-h-screen grid-flow-row gap-y-9 bg-slate-50 md:bg-slate-100 dark:bg-inherit">
+    <main class="relative grid w-full min-h-screen grid-flow-row gap-y-9 bg-slate-50 md:bg-slate-100 dark:bg-[#202122]">
         <!--Me (Carousel + Message)-->
         <section class="relative grid grid-cols-1 md:grid-cols-2 md:place-items-center lg:container lg:mx-auto">
             <!--Carousel-->
             <div id="image-slider" image-carousel="slide" class="relative my-3 bg-gray-500 lg:order-last md:hidden">
-                <!--image wrapper-->
                 <div class="relative overflow-hidden rounded-lg h-96">
                     <!--image one-->
                     <div class="block duration-700 ease-in-out" image-carousel-item>
@@ -103,7 +104,7 @@
                         <span class="text-xl font-medium dark:text-gray-400">Computer Scientist</span>
                     </div>
                     <div>
-                        <a href="#" class="px-12 py-3.5 text-white bg-purple-900 dark:bg-inherit dark:border dark:border-gray-300 rounded-tl-lg rounded-br-lg tracking-wider uppercase">Contact</a>
+                        <a href="#" class="px-12 py-3.5 text-white bg-[#08031d] dark:border dark:border-gray-300 rounded-tl-lg rounded-br-lg tracking-wider uppercase">Message</a>
                     </div>
                 </div>
                 <div class="flex items-center text-center">
@@ -129,62 +130,62 @@
             </div>
         </section>
         <!--Software Development-->
-        <section class="block mx-3 md:mx-0 lg:container lg:mx-auto dark:bg-gray-900">
+        <section class="block mx-3 md:mx-0 lg:container lg:mx-auto dark:bg-inherit">
             <div class="flex justify-start w-full py-2 uppercase md:py-4 md:justify-center">
                 <div class="py-3 border-l-4 tracking-[8px] font-light border-red-800 dark:text-gray-200 dark:border-gray-200 md:border-none ps-2 md:ps-0 md:text-2xl">Software Development</div>
             </div>
             <!--Container for all stacks-->
-            <div class="grid grid-cols-1 p-2 bg-inherit md:gap-x-4 lg:gap-x-9 gap-y-8 md:grid-cols-2 dark:bg-gray-900">
+            <div class="grid grid-cols-1 p-2 bg-inherit md:gap-x-4 lg:gap-x-9 gap-y-8 md:grid-cols-2 dark:bg-inherit">
                 <div class="flex flex-col space-y-10">
                     <!--Front-End-->
-                    <div class="flex flex-col pb-4 space-y-5 bg-white border border-gray-400 rounded-md dark:border-gray-200 dark:bg-inherit dark:text-gray-300">
+                    <div class="flex flex-col py-4 space-y-5 bg-white border border-gray-400 rounded-md dark:border-gray-200 dark:bg-inherit dark:text-gray-300">
                         <span class="w-full text-center uppercase">Front-End Web Development</span>
                         <!--Languages Container-->
                         <div class="grid grid-cols-2 gap-6 p-3 text-lg text-gray-700 md:text-xl md:gap-8">
                             <!--Language-->
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:bg-slate-800">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:bg-[#151616]">
                                 <img src="/assets/icons/html-5-svgrepo-com.svg" class="w-10 h-10" alt="">
                                 <span class="font-medium dark:text-gray-300">HTML 5</span>
                             </div>
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:bg-slate-800">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:bg-[#151616]">
                                 <img src="/assets/icons/css-3-svgrepo-com.svg" class="w-10 h-10" alt="">
                                 <span class="font-medium dark:text-gray-300">CSS 3</span>
                             </div>
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white border rounded-lg shadow-lg dark:bg-slate-800 dark:border-none">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white border rounded-lg shadow-lg dark:bg-[#151616] dark:border-none">
                                 <img src="/assets/icons/javascript-svgrepo-com.svg" class="w-10 h-10" alt="">
                                 <span class="font-medium dark:text-gray-300">Javascript</span>
                             </div>
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white border rounded-lg shadow-lg dark:bg-slate-800 dark:border-none">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white border rounded-lg shadow-lg dark:bg-[#151616] dark:border-none">
                                 <img src="/assets/icons/typescript-svgrepo-com.svg" class="w-10 h-10" alt="">
-                                <span class="font-medium">Typescript</span>
+                                <span class="font-medium dark:text-gray-300">Typescript</span>
                             </div>
                         </div>
                         <div class="w-4/5 border-b border-gray-400"></div>
                         <!--Frameworks-->
                         <div class="grid grid-cols-2 px-3 text-lg text-gray-700 md:text-xl gap-x-4">
-                            <div class="flex items-center px-2 py-3 space-x-2 bg-white border border-gray-300 rounded-lg shadow-lg dark:bg-slate-800 dark:border-none">
+                            <div class="flex items-center px-2 py-3 space-x-2 bg-white border border-gray-300 rounded-lg shadow-lg dark:bg-[#151616] dark:border-none">
                                 <img src="/assets/icons/tailwindcss-icon.svg" class="w-10 h-10" alt="">
                                 <span class="font-medium dark:text-gray-300">tailwindcss</span>
                             </div>
-                            <div class="flex items-center px-2 py-3 space-x-2 bg-white border border-gray-300 rounded-lg shadow-lg dark:border-none dark:bg-slate-800">
+                            <div class="flex items-center px-2 py-3 space-x-2 bg-white border border-gray-300 rounded-lg shadow-lg dark:border-none dark:bg-[#151616]">
                                 <img src="/assets/icons/vue-vuejs-javascript-js-framework.svg" class="w-10 h-10" alt="">
                                 <span class="font-medium dark:text-gray-300">VueJs</span>
                             </div>
                         </div>
                     </div>
                     <!--Back-End-->
-                    <div class="flex flex-col space-y-5 bg-white rounded-md md:border dark:border-none md:border-gray-400 dark:bg-inherit dark:border-gray-300">
+                    <div class="flex flex-col py-4 space-y-5 bg-white border border-gray-600 rounded-md dark:bg-inherit dark:border-gray-300">
                         <span class="w-full text-center uppercase dark:text-white">Back-End Web Development</span>
                         <!--Languages Container-->
                         <div class="grid grid-cols-2 gap-6 p-3 pt-4 text-lg text-gray-700 md:text-xl md:gap-8">
                             <!--Language-->
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:border-none dark:bg-slate-800">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:border-none dark:bg-[#151616]">
                                 <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m170.322 349.808c-2.4-15.66-9-28.38-25.02-34.531-6.27-2.4-11.7-6.78-17.88-9.54-7.02-3.15-14.16-6.15-21.57-8.1-5.61-1.5-10.83 1.02-14.16 5.94-3.15 4.62-.87 8.97 1.77 12.84 2.97 4.35 6.27 8.49 9.6 12.57 5.52 6.78 11.37 13.29 16.74 20.161 5.13 6.57 9.51 13.86 8.76 22.56-1.65 19.08-10.29 34.891-24.21 47.76-1.53 1.38-4.23 2.37-6.21 2.19-8.88-.96-16.95-4.32-23.46-10.53-7.47-7.11-6.33-15.48 2.61-20.67 2.13-1.23 4.35-2.37 6.3-3.87 5.46-4.11 7.29-11.13 4.32-17.22-1.41-2.94-3-6.12-5.34-8.25-11.43-10.41-22.651-21.151-34.891-30.63-29.671-23.041-44.91-53.52-47.251-90.421-2.64-40.981 6.87-79.231 28.5-114.242 8.19-13.29 17.73-25.951 32.37-32.52 9.96-4.47 20.88-6.99 31.531-9.78 29.311-7.71 58.89-13.5 89.401-8.34 26.28 4.41 45.511 17.94 54.331 43.77 5.79 16.89 7.17 34.35 5.37 52.231-3.54 35.131-29.49 66.541-63.331 75.841-14.67 4.02-22.68 1.77-31.5-10.44-6.33-8.79-11.58-18.36-17.25-27.631-.84-1.38-1.44-2.97-2.16-4.44-.69-1.47-1.44-2.88-2.16-4.35 2.13 15.24 5.67 29.911 13.98 42.99 4.5 7.11 10.5 12.36 19.29 13.14 32.34 2.91 59.641-7.71 79.021-33.721 21.69-29.101 26.461-62.581 20.19-97.831-1.23-6.96-3.3-13.77-4.77-20.7-.99-4.47.78-7.77 5.19-9.33 2.04-.69 4.14-1.26 6.18-1.68 26.461-5.7 53.221-7.59 80.191-4.86 30.601 3.06 59.551 11.46 85.441 28.471 40.531 26.67 65.641 64.621 79.291 110.522 1.98 6.66 2.28 13.95 2.46 20.971.12 4.68-2.88 5.91-6.45 2.97-3.93-3.21-7.53-6.87-10.92-10.65-3.15-3.57-5.67-7.65-8.73-11.4-2.37-2.94-4.44-2.49-5.58 1.17-.72 2.22-1.35 4.41-1.98 6.63-7.08 25.26-18.24 48.3-36.33 67.711-2.52 2.73-4.77 6.78-5.07 10.38-.78 9.96-1.35 20.13-.39 30.06 1.98 21.331 5.07 42.57 7.47 63.871 1.35 12.03-2.52 19.11-13.83 23.281-7.95 2.91-16.47 5.04-24.87 5.64-13.38.93-26.88.27-40.32.27-.36-15 .93-29.731-13.17-37.771 2.73-11.13 5.88-21.69 7.77-32.49 1.56-8.97.24-17.79-6.06-25.14-5.91-6.93-13.32-8.82-20.101-4.86-20.43 11.91-41.671 11.97-63.301 4.17-9.93-3.6-16.86-1.56-22.351 7.5-5.91 9.75-8.4 20.7-7.74 31.771.84 13.95 3.27 27.75 5.13 41.64 1.02 7.77.15 9.78-7.56 11.76-17.13 4.35-34.56 4.83-52.081 3.42-.93-.09-1.86-.48-2.46-.63-.87-14.55.66-29.671-16.68-37.411 7.68-16.29 6.63-33.18 3.99-50.07l-.06-.15zm-103.561-57.09c2.55-2.4 4.59-6.15 5.31-9.6 1.8-8.64-4.68-20.22-12.18-23.43-3.99-1.74-7.47-1.11-10.29 2.07-6.87 7.77-13.65 15.63-20.401 23.521-1.14 1.35-2.16 2.94-2.97 4.53-2.7 5.19-1.11 8.97 4.65 10.38 3.48.87 7.08 1.05 10.65 1.56 9.3-.9 18.3-2.46 25.23-9v-.03zm.78-86.371c-.03-6.18-5.19-11.34-11.28-11.37-6.27-.03-11.67 5.58-11.46 11.76.27 6.21 5.43 11.19 11.61 11.07 6.24-.09 11.22-5.19 11.16-11.43z"/>
                                 </svg>
                                 <span class="font-medium dark:text-gray-200">PHP</span>
                             </div>
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:border-none dark:bg-slate-800">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:border-none dark:bg-[#151616]">
                                 <svg viewBox="0 0 512 512" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect fill="none"  rx="15%"/>
                                     <g fill="#5a9fd4"><path id="a" d="m254 64c-16 0-31 1-44 4-39 7-46 21-46 47v35h92v12h-126c-27 0-50 16-58 46-8 35-8 57 0 93 7 28 23 47 49 47h32v-42c0-30 26-57 57-57h91c26 0 46-21 46-46v-88c0-24-21-43-46-47-15-3-32-4-47-4zm-50 28c10 0 17 8 17 18 0 9-7 17-17 17-9 0-17-8-17-17 0-10 8-18 17-18z"/></g>
@@ -192,7 +193,7 @@
                                 </svg>
                                 <span class="font-medium dark:text-gray-200">Python</span>
                             </div>
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:border-none dark:bg-slate-800">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white rounded-lg shadow-lg dark:border-none dark:bg-[#151616]">
                                 <svg fill="#ffffff" class="hidden w-10 h-10 dark:block" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                     <title>mysql</title>
                                     <path d="M30.026 15.139c-0.082-0.006-0.177-0.010-0.273-0.010-0.484 0-0.947 0.090-1.373 0.254l0.026-0.009c-0.125 0.050-0.325 0.050-0.342 0.209 0.069 0.066 0.079 0.175 0.137 0.267 0.117 0.198 0.261 0.366 0.429 0.506l0.003 0.003c0.175 0.137 0.35 0.27 0.534 0.387 0.325 0.2 0.694 0.319 1.012 0.52 0.181 0.117 0.366 0.266 0.55 0.391 0.091 0.062 0.15 0.175 0.267 0.215v-0.025c-0.057-0.075-0.075-0.184-0.131-0.267-0.084-0.084-0.167-0.159-0.25-0.241-0.248-0.325-0.535-0.603-0.857-0.835l-0.012-0.008c-0.267-0.182-0.852-0.437-0.962-0.744l-0.016-0.018c0.218-0.031 0.412-0.077 0.599-0.139l-0.024 0.007c0.284-0.075 0.544-0.059 0.837-0.132 0.132-0.034 0.266-0.075 0.4-0.117v-0.075c-0.15-0.15-0.262-0.354-0.417-0.494-0.409-0.36-0.86-0.698-1.335-1.002l-0.045-0.027c-0.262-0.167-0.595-0.275-0.871-0.417-0.1-0.050-0.267-0.075-0.325-0.159-0.13-0.185-0.245-0.397-0.336-0.621l-0.008-0.022q-0.368-0.714-0.684-1.453c-0.144-0.383-0.287-0.697-0.448-1.001l0.023 0.047c-0.786-1.319-1.881-2.379-3.188-3.102l-0.043-0.022c-0.309-0.153-0.668-0.272-1.045-0.339l-0.025-0.004c-0.209-0.010-0.417-0.025-0.625-0.034-0.146-0.094-0.272-0.19-0.39-0.296l0.003 0.003c-0.475-0.3-1.704-0.95-2.054-0.090-0.225 0.542 0.334 1.077 0.527 1.352 0.154 0.183 0.294 0.388 0.415 0.605l0.010 0.020c0.059 0.145 0.075 0.294 0.134 0.445 0.145 0.452 0.292 0.823 0.459 1.182l-0.026-0.062c0.099 0.199 0.202 0.368 0.317 0.528l-0.008-0.012c0.067 0.091 0.182 0.134 0.209 0.284-0.086 0.181-0.153 0.391-0.19 0.61l-0.002 0.014c-0.108 0.332-0.171 0.715-0.171 1.112 0 0.621 0.153 1.206 0.423 1.72l-0.010-0.020c0.134 0.207 0.452 0.667 0.878 0.491 0.375-0.15 0.292-0.625 0.4-1.043 0.025-0.1 0.009-0.166 0.060-0.234v0.019c0.117 0.235 0.235 0.459 0.342 0.694 0.302 0.435 0.661 0.805 1.071 1.11l0.013 0.009c0.2 0.15 0.359 0.41 0.609 0.502v-0.025h-0.019c-0.057-0.062-0.12-0.117-0.189-0.164l-0.004-0.002c-0.155-0.152-0.299-0.316-0.429-0.489l-0.008-0.011c-0.326-0.44-0.636-0.938-0.905-1.461l-0.029-0.061c-0.137-0.262-0.252-0.545-0.362-0.804-0.050-0.1-0.050-0.25-0.134-0.3-0.148 0.166-0.281 0.351-0.392 0.55l-0.008 0.016c-0.128 0.373-0.212 0.804-0.234 1.251l-0 0.011c-0.034 0.009-0.017 0-0.034 0.018-0.267-0.065-0.359-0.342-0.459-0.575-0.136-0.366-0.215-0.79-0.215-1.231 0-0.356 0.051-0.7 0.147-1.025l-0.006 0.026c0.059-0.175 0.309-0.727 0.209-0.895-0.052-0.159-0.217-0.25-0.309-0.379-0.109-0.154-0.209-0.329-0.292-0.514l-0.008-0.020c-0.2-0.467-0.3-0.985-0.517-1.452-0.131-0.244-0.269-0.454-0.424-0.65l0.007 0.009c-0.165-0.191-0.317-0.404-0.449-0.63l-0.011-0.020c-0.041-0.091-0.1-0.242-0.034-0.342 0.012-0.058 0.058-0.103 0.117-0.112l0.001-0c0.11-0.090 0.419 0.027 0.527 0.077 0.317 0.12 0.59 0.261 0.843 0.427l-0.016-0.010c0.117 0.082 0.244 0.241 0.394 0.282h0.175c0.267 0.059 0.569 0.018 0.819 0.091 0.459 0.155 0.856 0.349 1.223 0.587l-0.021-0.013c1.104 0.713 1.988 1.677 2.586 2.816l0.020 0.041c0.1 0.192 0.144 0.369 0.235 0.569 0.175 0.412 0.391 0.829 0.569 1.227 0.169 0.428 0.369 0.798 0.607 1.139l-0.012-0.018c0.125 0.175 0.627 0.266 0.852 0.357 0.237 0.083 0.427 0.162 0.611 0.251l-0.037-0.016c0.287 0.175 0.567 0.375 0.837 0.567 0.137 0.095 0.554 0.304 0.579 0.472zM18.302 22.452c0 0.015 0.001 0.032 0.001 0.049 0 0.558-0.249 1.057-0.643 1.393l-0.003 0.002c-0.432 0.352-0.989 0.566-1.596 0.566-0.047 0-0.094-0.001-0.14-0.004l0.006 0c-0.739-0.010-1.419-0.25-1.976-0.651l0.010 0.007 0.296-0.595c0.429 0.24 0.939 0.389 1.481 0.41l0.006 0c0.027 0.002 0.058 0.003 0.090 0.003 0.332 0 0.641-0.104 0.894-0.281l-0.005 0.003c0.229-0.174 0.375-0.446 0.375-0.752 0-0.006-0-0.011-0-0.017v0.001c0-0.412-0.287-0.762-0.81-1.056-0.485-0.266-1.453-0.821-1.453-0.821-0.478-0.296-0.791-0.817-0.791-1.411 0-0.021 0-0.042 0.001-0.063l-0 0.003c-0.001-0.019-0.001-0.041-0.001-0.063 0-0.515 0.227-0.977 0.586-1.291l0.002-0.002c0.382-0.324 0.881-0.521 1.426-0.521 0.035 0 0.069 0.001 0.103 0.002l-0.005-0c0.009-0 0.020-0 0.031-0 0.639 0 1.234 0.191 1.73 0.52l-0.012-0.007-0.266 0.595c-0.391-0.176-0.847-0.282-1.327-0.287l-0.002-0c-0.024-0.002-0.051-0.003-0.079-0.003-0.28 0-0.538 0.098-0.74 0.262l0.002-0.002c-0.189 0.157-0.309 0.392-0.31 0.655v0c0 0.41 0.292 0.762 0.832 1.062 0.491 0.269 1.483 0.837 1.483 0.837 0.488 0.287 0.811 0.809 0.811 1.407 0 0.018-0 0.037-0.001 0.055l0-0.003zM20.374 22.983c-0.273-0.545-0.432-1.187-0.432-1.866 0-0.107 0.004-0.213 0.012-0.317l-0.001 0.014q0-2.611 1.587-2.612c0.026-0.002 0.057-0.003 0.089-0.003 0.475 0 0.892 0.248 1.129 0.622l0.003 0.005c0.271 0.542 0.43 1.182 0.43 1.858 0 0.104-0.004 0.207-0.011 0.309l0.001-0.014q0 2.632-1.587 2.634c-0.027 0.002-0.058 0.003-0.089 0.003-0.475 0-0.893-0.248-1.13-0.622l-0.003-0.005zM24.488 24.535l-1.27-0.625c0.116-0.097 0.22-0.199 0.316-0.309l0.003-0.003c0.513-0.692 0.821-1.563 0.821-2.505 0-0.109-0.004-0.217-0.012-0.324l0.001 0.014q0-3.43-2.693-3.432c-0.040-0.002-0.087-0.003-0.134-0.003-0.767 0-1.456 0.337-1.925 0.872l-0.002 0.003c-0.511 0.692-0.818 1.562-0.818 2.504 0 0.106 0.004 0.211 0.012 0.315l-0.001-0.014c-0.009 0.101-0.014 0.219-0.014 0.338 0 0.874 0.274 1.684 0.74 2.349l-0.009-0.013c0.449 0.478 1.086 0.776 1.791 0.776 0.066 0 0.131-0.003 0.195-0.008l-0.009 0.001c0.009 0 0.021 0 0.032 0 0.311 0 0.612-0.045 0.897-0.128l-0.022 0.006 1.656 0.965 0.45-0.777zM28.636 24.366h-3.287v-6.91h1.106v6.061h2.181zM13.235 19.268c-0.287 2.084-0.944 3.965-1.905 5.65l0.040-0.077c-0.385 0.741-1.113 1.257-1.968 1.34l-0.010 0.001c-0.259-0.014-0.5-0.076-0.719-0.177l0.012 0.005v-0.617c0.137 0.021 0.295 0.033 0.456 0.033 0.009 0 0.018-0 0.028-0h-0.001c0.016 0.001 0.034 0.001 0.052 0.001 0.289 0 0.554-0.105 0.758-0.28l-0.002 0.001c0.22-0.181 0.361-0.451 0.369-0.755l0-0.001c-0.053-0.438-0.154-0.837-0.299-1.214l0.012 0.034-1.267-3.944h1.137l0.909 2.949c0.162 0.416 0.256 0.898 0.256 1.401 0 0.001 0 0.002 0 0.002v-0c0.482-1.262 0.848-2.734 1.034-4.261l0.009-0.092zM8.215 24.366h-1.158q-0.049-2.761-0.337-5.511h-0.010l-1.762 5.511h-0.881l-1.75-5.511h-0.012q-0.205 2.751-0.244 5.511h-1.056q0.103-3.685 0.512-6.911h1.437l1.668 5.079h0.010l1.683-5.079h1.368q0.454 3.777 0.535 6.911zM21.505 7.879c-0.002 0-0.005-0-0.008-0-0.119 0-0.234 0.015-0.344 0.043l0.010-0.002v0.016h0.017c0.086 0.128 0.174 0.239 0.269 0.343l-0.002-0.002c0.067 0.134 0.125 0.267 0.192 0.4l0.017-0.019c0.109-0.086 0.178-0.218 0.178-0.366 0-0.018-0.001-0.035-0.003-0.053l0 0.002c-0.050-0.059-0.057-0.117-0.1-0.175-0.050-0.084-0.157-0.125-0.225-0.191z"></path>
@@ -207,7 +208,7 @@
                         <div class="w-4/5 border-b border-gray-300"></div>
                         <!--Frameworks-->
                         <div class="grid w-full grid-cols-1 px-10 text-lg text-gray-700 md:text-xl">
-                            <div class="flex items-center justify-center py-3 space-x-2 bg-white border border-gray-200 rounded-md shadow-lg pointer-events-none dark:border-none dark:bg-slate-800">
+                            <div class="flex items-center justify-center py-3 space-x-2 bg-white border border-gray-200 rounded-md shadow-lg pointer-events-none dark:border-none dark:bg-[#151616]">
                                 <img src="/assets/icons/laravel.svg" class="w-10 h-10" alt="">
                                 <span class="font-medium dark:text-gray-200">Laravel</span>
                             </div>
@@ -331,7 +332,7 @@
                 <div class="py-3 border-l-4 tracking-[10px] font-light dark:text-gray-200 border-red-800 dark:border-gray-200 md:border-none ps-2 md:ps-0 md:text-2xl">Millitary Defense</div>
             </div>
             <div class="flex flex-col bg-white rounded-lg md:border md:border-gray-200 md:mx-2 lg:container lg:mx-auto md:rounded-lg md:flex-row">
-                <div class="flex flex-col justify-evenly text-start md:w-1/2 ps-3 pe-8 dark:bg-gray-900">
+                <div class="flex flex-col justify-evenly text-start md:w-1/2 ps-3 pe-8 dark:bg-[#151616]">
                     <span class="text-2xl font-semibold uppercase dark:text-gray-200">Developing for the digital age</span>
                     <div class="flex flex-col py-3 space-y-4 text-lg font-medium text-gray-700 md:text-xl dark:text-gray-300">
                         <p>
@@ -358,9 +359,9 @@
             <div class="hidden text-xl md:block dark:text-gray-300">
                 <span class="text-6xl font-bold">"</span>
             </div>
-            <!--Testimonial Container-->
+            
             <div class="grid grid-cols-1 text-xl gap-9 md:grid-cols-2 lg:grid-cols-3 dark:text-slate-100 md:mx-2">
-                <!--testimonial-->
+                
                 <div class="flex flex-col space-y-3 rounded-md">
                     <p class="font-medium leading-9 tracking-wide text-slate-600 dark:text-gray-300">
                         Murigu Gitonga has time and again proven to be an all-rounder when it 
@@ -416,7 +417,7 @@
             <div class="flex justify-start w-full py-2 uppercase bg-slate-700 md:py-4 md:justify-center">
                 <div class="py-1 tracking-[10px] font-light border-l-4 border-white md:border-none ps-2 md:ps-0 md:text-2xl">Miscellaneous</div>
             </div>
-            <!--skillset: Other-->
+            
             <div class="flex flex-col items-start py-4 space-y-5 divide-y md:flex-row md:justify-evenly md:divide-y-0 md:divide-x">  
                 <div class="flex flex-col p-4 space-y-3 rounded-lg md:space-y-5">
                     <span class="text-2xl font-medium">Software & Software Development</span>
@@ -437,7 +438,7 @@
                             <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17317C0.00433284 8.00043 -0.193701 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8079C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7363 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM14.3 7.61L9.73 13.61C9.63685 13.731 9.51721 13.8291 9.38027 13.8967C9.24333 13.9643 9.09272 13.9996 8.94 14C8.78811 14.0008 8.63803 13.967 8.50115 13.9012C8.36426 13.8353 8.24418 13.7392 8.15 13.62L5.71 10.51C5.62924 10.4063 5.5697 10.2876 5.53479 10.1609C5.49988 10.0341 5.49027 9.90172 5.50652 9.77126C5.52277 9.64079 5.56456 9.5148 5.6295 9.40049C5.69444 9.28617 5.78126 9.18576 5.885 9.105C6.09453 8.94189 6.36026 8.8687 6.62375 8.90152C6.75421 8.91777 6.8802 8.95955 6.99452 9.02449C7.10884 9.08943 7.20924 9.17626 7.29 9.28L8.92 11.36L12.7 6.36C12.7801 6.25494 12.8801 6.16669 12.9943 6.10029C13.1086 6.03388 13.2347 5.99062 13.3657 5.97298C13.4966 5.95534 13.6297 5.96365 13.7574 5.99746C13.8851 6.03126 14.0049 6.08989 14.11 6.17C14.2151 6.25011 14.3033 6.35012 14.3697 6.46433C14.4361 6.57855 14.4794 6.70472 14.497 6.83565C14.5147 6.96658 14.5063 7.0997 14.4725 7.22742C14.4387 7.35514 14.3801 7.47494 14.3 7.58V7.61Z" fill="#1AA260"/>
                             </svg>                            
-                            <span>Unit testing with vue-test-utilis</span>
+                            <span>Unit testing with Vitest</span>
                         </li>
                         <li class="flex items-center space-x-2">
                             <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -500,7 +501,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="block dark:bg-[#202122]">
         <div class="flex flex-col space-y-3 lg:mx-10">
             <div class="flex items-center justify-between py-2 border-b border-gray-700 dark:border-gray-200">
                 <span class="font-baloo dark:text-slate-200">Blog</span>
