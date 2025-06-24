@@ -118,12 +118,45 @@ document.addEventListener("DOMContentLoaded", () => {
     startAutoSlide();
   });
   
+// Modal logic
+document.addEventListener('DOMContentLoaded', ()=>{
+    const mobileButton = document.getElementById('mobileBtn');
+    const desktopButton = document.getElementById('desktopBtn')
+    const modalOverlay = document.getElementById('overlay');
+    const mainModal = document.getElementById('contactModal');
+    const closeModal = document.getElementById('closeModal');
+    const main = document.getElementById('main');
+    const content = document.getElementById('content')
+    
+    //Raise modal anytime button is clicked
+    mobileButton.addEventListener('click', ()=>{
+      //console.log('clicked');
+      modalOverlay.classList.remove('hidden');
+      modalOverlay.classList.add('flex');
+      content.classList.add('blur-sm');
+    });
+     desktopButton.addEventListener('click', ()=>{
+      //console.log('clicked');
+      modalOverlay.classList.remove('hidden');
+      modalOverlay.classList.add('flex');
+      content.classList.add('blur-sm');
+    });
+    closeModal.addEventListener('click',() =>{
+      modalOverlay.classList.remove('flex');
+      modalOverlay.classList.add('hidden');
+      content.classList.remove('blur-sm');
+    })
+  });
 
 // logic for development & marketing containers slider
+
 
 // logic for footer dynamic age display
 let currentYear = document.getElementById('current-year');
 let thisYear = new Date();
 const thisDate = thisYear.getFullYear();
 currentYear.innerHTML = thisDate;
+
+
+
 
